@@ -15,7 +15,6 @@
     "ripemd160": "^2.0.2",
     "secp256k1": "^3.7.1",
     "bcryptjs": "git+https://github.com/qqqzhch/bcrypt.js.git",
-    "irisnet-crypto": "https://github.com/qqqzhch/irisnet-crypto.git",
     "typedarray-to-buffer": "^3.1.5",
     "buffer-to-uint8array": "^1.1.0",
     "tweetnacl": "^1.0.1",
