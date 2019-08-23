@@ -1,5 +1,5 @@
 {
-  "name": "webfans/cosmos-lib",
+  "name": "@webfans/cosmos-lib",
   "version": "1.1.4",
   "description": "Lib to generate private/public keys, addresses for Cosmos ",
   "main": "index.js",
