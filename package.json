@@ -1,6 +1,6 @@
 {
   "name": "@jswebfans/cosmos-lib",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "Lib to generate private/public keys, addresses for Cosmos ",
   "main": "index.js",
   "license": "MIT",
