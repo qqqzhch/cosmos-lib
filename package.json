@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha",
     "docs": "jsdoc lib/address.js lib/crypto.js",
-    "eslint":"./node_modules/.bin/eslint index.js util/  lib/ "
+    "eslint":"./node_modules/.bin/eslint index.js util/  lib/ ",
     "eslint:fix":"./node_modules/.bin/eslint index.js util/  lib/ --fix"
   },
   "dependencies": {
