@@ -8,9 +8,9 @@ require('chai').should();
 const cosmos = require('../index.js');
 const crypto = require('crypto');
 
-const MNEMONIC    = 'cluster unveil differ bright define prosper hunt warrior fetch rough host fringe worry mention gospel enlist elder laugh segment funny avoid regular market fortune';
-const PUBLIC_KEY  = '037613839479ae3b2a00be35ec9a97a27c53ef551788de7ef51628970458b3d38f';
-const PRIVATE_KEY = '8ce79a8c09c0e899715d33ef091eca92e1d77fbbd335bc8adfc1af0a29945a46';
+const MNEMONIC    = 'soccer sort make soon family buyer merry dash major winner emerge peace zone drastic yellow sound razor void angry weasel vehicle afford toe sing';
+const PUBLIC_KEY  = '03c5c007170a8b46d7e8ffcaec26a27cf26f7e4fe94ab7f813b98133bc95f3d651';
+const PRIVATE_KEY = 'd95debc02958f4174a0dd105bfe078ce0961ae0b3a3d5b9d1b51e7d70b3a8ae1';
 
 describe('lib/crypto', () => {
     let keys;

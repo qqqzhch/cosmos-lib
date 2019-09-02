@@ -5,31 +5,38 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-      "test": "mocha",
-      "docs": "jsdoc lib/address.js lib/crypto.js"
+    "test": "mocha",
+    "docs": "jsdoc lib/address.js lib/crypto.js"
   },
   "dependencies": {
+    "@jswebfans/bcryptjs": "2.4.4",
+    "@jswebfans/irisnet-crypto": "1.1.7",
     "bech32": "^1.1.3",
     "bip32": "^2.0.3",
     "bip39": "^3.0.2",
+    "buffer-to-uint8array": "^1.1.0",
     "ripemd160": "^2.0.2",
     "secp256k1": "^3.7.1",
-    "@jswebfans/bcryptjs": "2.4.4",
-    "typedarray-to-buffer": "^3.1.5",
-    "buffer-to-uint8array": "^1.1.0",
+    "sha256": "^0.2.0",
     "tweetnacl": "^1.0.1",
     "tweetnacl-util": "^0.15.0",
-    "@jswebfans/irisnet-crypto": "1.1.7"
-
+    "typedarray-to-buffer": "^3.1.5"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.1.4"
   },
   "repository": {
-      "type" : "git",
-      "url" : "git@github.com:WingsDao/cosmos-lib.git"
+    "type": "git",
+    "url": "git@github.com:WingsDao/cosmos-lib.git"
   },
-  "keywords": ["crypto", "cosmos-sdk", "cosmos", "bech32", "address", "bitcoin"],
+  "keywords": [
+    "crypto",
+    "cosmos-sdk",
+    "cosmos",
+    "bech32",
+    "address",
+    "bitcoin"
+  ],
   "homepage": "https://github.com/WingsDao/cosmos-lib"
 }
