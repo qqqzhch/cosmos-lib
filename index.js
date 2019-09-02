@@ -1,5 +1,5 @@
 /**
- * Lib helpers to work with cosmos keys and addresses from JS.
+ * Lib helpers to work with lambda hd keys and addresses from JS.
  */
 'use strict';
 

@@ -2,7 +2,7 @@
 
 require('chai').should();
 
-const cosmos = require('../index.js');
+const LAMBHDKEY = require('../index.js');
 
 const ADDRESS    = 'lambda163q4m634nq8les4nuvdvz49tk6aeh926t0ccsc';
 const BYTES_HEX  = 'd4415dea35980ffcc2b3e31ac154abb6bb9b955a';
@@ -16,12 +16,12 @@ describe('lib/publicKey', () => {
     let bytes32;
 
     it('Should get bench32 public key from public key bytes', () => {
-        const value = cosmos.publicKey.getPublicKey(Buffer.from(PUBLIC_KEY, 'hex'));
+        const value = LAMBHDKEY.publicKey.getPublicKey(Buffer.from(PUBLIC_KEY, 'hex'));
         value.should.be.equal(bench32Publikey);
     });
 
     it('Should get public key bytes   key from bench32 public', () => {
-        const value = cosmos.publicKey.getBytes(bench32Publikey).toString('hex');
+        const value = LAMBHDKEY.publicKey.getBytes(bench32Publikey).toString('hex');
         value.should.be.equal(PUBLIC_KEY);
     });
 

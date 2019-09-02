@@ -1,7 +1,7 @@
 
 require('chai').should();
 
-const cosmos = require('../index.js');
+const LAMBHDKEY = require('../index.js');
 
 const ADDRESS    = 'lambda163q4m634nq8les4nuvdvz49tk6aeh926t0ccsc';
 const BYTES_HEX  = 'd4415dea35980ffcc2b3e31ac154abb6bb9b955a';
@@ -16,11 +16,11 @@ var password='123456',name='test';
 describe('lib/keyStore', () => {
     let bytes;
     let bytes32;
-    var keys = cosmos.crypto.getKeysFromMnemonic(MNEMONIC);
+    var keys = LAMBHDKEY.crypto.getKeysFromMnemonic(MNEMONIC);
 
-    const value = cosmos.keyStore.toJson(keys,password,name);
+    const value = LAMBHDKEY.keyStore.toJson(keys,password,name);
 
-    var _privateKey = cosmos.keyStore.checkJson(value,password);
+    var _privateKey = LAMBHDKEY.keyStore.checkJson(value,password);
 
     it('Should checkjson and to json name', () => {
         value.name.should.be.equal(name);

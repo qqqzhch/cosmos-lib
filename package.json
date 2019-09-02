@@ -1,16 +1,17 @@
 {
   "name": "@jswebfans/cosmos-lib",
   "version": "1.2.4",
-  "description": "Lib to generate private/public keys, addresses for Cosmos ",
+  "description": "Lib to generate private/public keys, addresses for lambda  ",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "test": "mocha",
-    "docs": "jsdoc lib/address.js lib/crypto.js"
+    "docs": "jsdoc lib/address.js lib/crypto.js",
+    "eslint":"./node_modules/.bin/eslint index.js util/  lib/ "
+    "eslint:fix":"./node_modules/.bin/eslint index.js util/  lib/ --fix"
   },
   "dependencies": {
     "@jswebfans/bcryptjs": "2.4.4",
-    "@jswebfans/irisnet-crypto": "1.1.7",
     "bech32": "^1.1.3",
     "bip32": "^2.0.3",
     "bip39": "^3.0.2",
@@ -24,6 +25,12 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "mocha": "^6.1.4"
   },
   "repository": {
@@ -32,8 +39,8 @@
   },
   "keywords": [
     "crypto",
-    "cosmos-sdk",
-    "cosmos",
+    "lambdaHDKey",
+    "lambda",
     "bech32",
     "address",
     "bitcoin"

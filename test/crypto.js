@@ -5,7 +5,7 @@
 
 require('chai').should();
 
-const cosmos = require('../index.js');
+const LAMBHDKEY = require('../index.js');
 const crypto = require('crypto');
 
 const MNEMONIC    = 'soccer sort make soon family buyer merry dash major winner emerge peace zone drastic yellow sound razor void angry weasel vehicle afford toe sing';
@@ -22,34 +22,34 @@ describe('lib/crypto', () => {
     };
 
     it('Should generate keys from mnemonic', () => {
-        keys = cosmos.crypto.getKeysFromMnemonic(MNEMONIC);
+        keys = LAMBHDKEY.crypto.getKeysFromMnemonic(MNEMONIC);
 
         keys.publicKey.toString('hex').should.equal(PUBLIC_KEY);
         keys.privateKey.toString('hex').should.equal(PRIVATE_KEY);
     });
 
     it('Should sign bytes with private key', () => {
-        signature = cosmos.crypto.sign(bytes, keys.privateKey);
+        signature = LAMBHDKEY.crypto.sign(bytes, keys.privateKey);
         signature.length.should.be.equal(64);
     });
 
     it('Should verify signature', () => {
-        const verify = cosmos.crypto.verify(bytes, signature, keys.publicKey);
+        const verify = LAMBHDKEY.crypto.verify(bytes, signature, keys.publicKey);
         verify.should.be.true;
     });
 
     it('Should sign JSON with private key', () => {
-        signature = cosmos.crypto.signJson(json, keys.privateKey);
+        signature = LAMBHDKEY.crypto.signJson(json, keys.privateKey);
         signature.length.should.be.equal(64);
     });
 
     it('Should verify signature on JSON', () => {
-        const verify = cosmos.crypto.verifyJson(json, signature, keys.publicKey);
+        const verify = LAMBHDKEY.crypto.verifyJson(json, signature, keys.publicKey);
         verify.should.be.true;
     });
 
     it('Should reject wrong signature', () => {
-        const verify = cosmos.crypto.verifyJson(json, crypto.randomBytes(64), keys.publicKey);
+        const verify = LAMBHDKEY.crypto.verifyJson(json, crypto.randomBytes(64), keys.publicKey);
         verify.should.be.false;
     });
 });
